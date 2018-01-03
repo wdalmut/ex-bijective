@@ -8,10 +8,21 @@ defmodule Bijective.Mixfile do
       elixir: "~> 1.5",
       start_permanent: Mix.env == :prod,
       deps: deps(),
+      description: description(),
+      package: package(),
+      source_url: "https://github.com/wdalmut/ex-bijective",
+    ]
+  end
+
+  defp description() do
+    "Generate a unique sentence for a given number and vice-versa"
+  end
+
+  defp package() do
+    [
       licenses: ["MIT"],
       maintainers: ["Walter Dal Mut <walter.dalmut@gmail.com>"],
-      source_url: "https://github.com/wdalmut/ex-bijective",
-      homepage_url: "https://github.com/wdalmut/ex-bijective"
+      links: %{"GitHub" => "https://github.com/wdalmut/ex-bijective"}
     ]
   end
 
