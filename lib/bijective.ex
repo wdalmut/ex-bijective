@@ -5,7 +5,7 @@ defmodule Bijective do
   Generate a unique string for a given value and decode a string to a unique number
   """
 
-  @alphabet "abcdefghipqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+  @alphabet "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 
   def encode(number) when number == 0, do: @alphabet |> String.at(number)
 
@@ -15,7 +15,7 @@ defmodule Bijective do
   ## Examples
 
       iex> Bijective.encode(19587376)
-      "b9J8M"
+      "bulJA"
 
   """
   def encode(number) do
@@ -46,7 +46,7 @@ defmodule Bijective do
 
   ## Examples
 
-      iex> Bijective.decode("b9J8M")
+      iex> Bijective.decode("bulJA")
       19587376
 
   """
