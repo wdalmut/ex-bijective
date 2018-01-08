@@ -7,8 +7,8 @@ element of the first set.
 
 ```elixir
 iex> Bijective.encode(19587376)
-"b9J8M"
-iex> Bijective.decode("b9J8M")
+"bulJA"
+iex> Bijective.decode("bulJA")
 19587376
 ```
 
@@ -19,7 +19,7 @@ You can install by adding `bijective` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:bijective, "~> 0.0.1"}
+    {:bijective, "~> 0.0.2"}
   ]
 end
 ```
